@@ -1,1 +1,2 @@
 This time I am writing one line and a commit.  After that pull it from intellij
+Adding another line and commit changes
