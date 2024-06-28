@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import study.dto.ChildParentSalary;
+import study.dto.ChildParentSalaryDto;
 import study.dto.ParentDTO;
 import study.model.Child;
 import study.model.Parent;
@@ -47,12 +47,12 @@ public class ParentController {
 	}
 
 	@GetMapping("parent/findChildrenWithSalary<=/{salary}")
-	public List<ChildParentSalary> findChildrenWithSalaryLessthan(@PathVariable long salary){
+	public List<ChildParentSalaryDto> findChildrenWithSalaryLessthan(@PathVariable long salary){
 		return childRepository.findChildrenWithSalaryLessthan(salary);
 	}
 	
 	@GetMapping("parent/findChildrenWithSalary>=/{salary}")
-	public List<ChildParentSalary> findChildrenWithSalaryGreaterthan(@PathVariable long salary){
+	public List<ChildParentSalaryDto> findChildrenWithSalaryGreaterthan(@PathVariable long salary){
 		return childRepository.findChildrenWithSalaryGreaterthan(salary);
 	}
 	

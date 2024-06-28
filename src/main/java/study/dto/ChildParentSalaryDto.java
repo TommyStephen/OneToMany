@@ -1,15 +1,15 @@
 package study.dto;
 
-public class ChildParentSalary {
+public class ChildParentSalaryDto {
 
 	private long id;
 	private String childName;
 	private long salary;
 	private String parentName;
 	
-	ChildParentSalary(){}
+	ChildParentSalaryDto(){}
 
-	public ChildParentSalary(long id, String childName, long salary, String parentName) {
+	public ChildParentSalaryDto(long id, String childName, long salary, String parentName) {
 		super();
 		this.id = id;
 		this.childName = childName;
