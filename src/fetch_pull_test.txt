@@ -1,2 +1,3 @@
 This time I am writing one line and a commit.  After that pull it from intellij
 Adding another line and commit changes
+Third line is added from the remote repository to be do a fetch from the local machine.  It can be seen that the file does not contain this line.  This is because the fetch will update the local repository and not the working copy.  Whereas when we pull a file from the remote repository it is directly copies on to the working directory
